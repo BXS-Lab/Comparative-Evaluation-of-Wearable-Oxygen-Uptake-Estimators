@@ -1,5 +1,7 @@
 # Analysis code — *Comparative Evaluation of Wearable Oxygen-Uptake Estimators Using Persistence, Transition, and Equivalence Analyses*
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20768308.svg)](https://doi.org/10.5281/zenodo.20768308)
+
 This repository contains all analysis code for the paper: preprocessing, model training,
 hyperparameter tuning (including the reproducible Optuna scripts that regenerate the tuned
 Random Forest and XGBoost under the 16-fold leave-one-participant-out (LOPO) RMSE objective),
@@ -99,3 +101,9 @@ under `results/`**, so the statistics, tables, and figures (steps 7–12) reprod
 
 Python 3.11 with: numpy, pandas, scipy, scikit-learn, matplotlib, xgboost, optuna, and torch
 (temporal models only). See `requirements.txt`.
+
+## Citation
+
+If you use this code or the result artefacts, please cite the archived release via its
+**concept DOI** (resolves to the latest version): https://doi.org/10.5281/zenodo.20768308.
+Machine-readable citation metadata is in `CITATION.cff`.
