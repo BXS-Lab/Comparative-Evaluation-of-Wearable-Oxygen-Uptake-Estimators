@@ -1,0 +1,134 @@
+{
+  "old": {
+    "tag": "OLD (RF tuned on Pearson r)",
+    "leaderboard": {
+      "LINEAR": 2.7899955992511067,
+      "RIDGE": 2.7393238377188256,
+      "LASSO": 2.770036501743062,
+      "ELASTICNET": 2.7538602236764738,
+      "RF": 2.51531477289303,
+      "XGB": 2.667973485474417,
+      "GRU": 2.4825989475491634,
+      "LSTM": 2.5201868669013616,
+      "TCN": 2.4315448180361328,
+      "TFT": 2.506180797969004,
+      "PATCHTST": 2.4343656997819747
+    },
+    "friedman_chi2": 41.40909090909088,
+    "friedman_p": 9.549286658852577e-06,
+    "pairwise_n_survive_holm": 0,
+    "pairwise_smallest_holm": 0.092315673828125,
+    "family": {
+      "Temporal_vs_Linear": {
+        "p_raw_meanfam": 0.002685546875,
+        "p_holm_meanfam": 0.008056640625,
+        "p_bestinfam": 3.0517578125e-05
+      },
+      "Temporal_vs_Tree": {
+        "p_raw_meanfam": 0.116668701171875,
+        "p_holm_meanfam": 0.116668701171875,
+        "p_bestinfam": 9.1552734375e-05
+      },
+      "Tree_vs_Linear": {
+        "p_raw_meanfam": 0.01824951171875,
+        "p_holm_meanfam": 0.0364990234375,
+        "p_bestinfam": 0.00762939453125
+      }
+    },
+    "equivalence_power": {
+      "TCN_vs_RF": {
+        "gap": 0.0837699548568982,
+        "sd_diff": 0.427932230252006,
+        "mde": 0.32072050475389224,
+        "gap_below_mde": true,
+        "achieved_power": 0.11362082512113927,
+        "tost_0.25": 0.07053721844377979,
+        "tost_0.50": 0.0007243479736079537
+      },
+      "TCN_vs_RIDGE": {
+        "gap": 0.3077790196826933,
+        "sd_diff": 0.34333174520876,
+        "mde": 0.25731534770480646,
+        "gap_below_mde": false,
+        "achieved_power": 0.9174832496525615,
+        "tost_0.25": 0.7444567492556327,
+        "tost_0.50": 0.02035093785563337
+      },
+      "Temporal_vs_Tree": {
+        "gap": 0.1166687031361966,
+        "sd_diff": 0.24329974926839973,
+        "mde": 0.18234480339539885,
+        "gap_below_mde": true,
+        "achieved_power": 0.43465018323156457,
+        "tost_0.25": 0.02228314802562988,
+        "tost_0.50": 7.090983060518762e-06
+      }
+    }
+  },
+  "new": {
+    "tag": "NEW (RF/XGB tuned on LOPO-RMSE)",
+    "leaderboard": {
+      "LINEAR": 2.7899955992511067,
+      "RIDGE": 2.7393238377188256,
+      "LASSO": 2.770036501743062,
+      "ELASTICNET": 2.7538602236764738,
+      "RF": 2.5074804058758984,
+      "XGB": 2.477370615951176,
+      "GRU": 2.4825989475491634,
+      "LSTM": 2.5201868669013616,
+      "TCN": 2.4315448180361328,
+      "TFT": 2.506180797969004,
+      "PATCHTST": 2.4343656997819747
+    },
+    "friedman_chi2": 43.011363636363626,
+    "friedman_p": 4.949815803491511e-06,
+    "pairwise_n_survive_holm": 4,
+    "pairwise_smallest_holm": 0.00335693359375,
+    "family": {
+      "Temporal_vs_Linear": {
+        "p_raw_meanfam": 0.002685546875,
+        "p_holm_meanfam": 0.00537109375,
+        "p_bestinfam": 3.0517578125e-05
+      },
+      "Temporal_vs_Tree": {
+        "p_raw_meanfam": 0.979949951171875,
+        "p_holm_meanfam": 0.979949951171875,
+        "p_bestinfam": 0.000152587890625
+      },
+      "Tree_vs_Linear": {
+        "p_raw_meanfam": 0.001312255859375,
+        "p_holm_meanfam": 0.003936767578125,
+        "p_bestinfam": 0.001007080078125
+      }
+    },
+    "equivalence_power": {
+      "TCN_vs_RF": {
+        "gap": 0.07593558783976517,
+        "sd_diff": 0.4449266444793756,
+        "mde": 0.3334572343659361,
+        "gap_below_mde": true,
+        "achieved_power": 0.09807423895628166,
+        "tost_0.25": 0.06922977747656028,
+        "tost_0.50": 0.0008497229652865173
+      },
+      "TCN_vs_RIDGE": {
+        "gap": 0.3077790196826933,
+        "sd_diff": 0.34333174520876,
+        "mde": 0.25731534770480646,
+        "gap_below_mde": false,
+        "achieved_power": 0.9174832496525615,
+        "tost_0.25": 0.7444567492556327,
+        "tost_0.50": 0.02035093785563337
+      },
+      "Temporal_vs_Tree": {
+        "gap": 0.017450084866009075,
+        "sd_diff": 0.27177171665036975,
+        "mde": 0.20368356477989258,
+        "gap_below_mde": true,
+        "achieved_power": 0.05666998596890099,
+        "tost_0.25": 0.0018887338549381176,
+        "tost_0.50": 1.8054173059040062e-06
+      }
+    }
+  }
+}

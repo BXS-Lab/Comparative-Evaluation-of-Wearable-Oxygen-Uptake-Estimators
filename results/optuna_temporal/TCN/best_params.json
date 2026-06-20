@@ -1,0 +1,16 @@
+{
+  "params": {
+    "base_channels": 32,
+    "batch_size": 32,
+    "dropout": 0.39608143605664037,
+    "kernel_size": 5,
+    "lr": 0.00011399728713999333,
+    "num_levels": 7
+  },
+  "rmse": 2.2843542652675763,
+  "filter_hz": 0.2,
+  "seq_length": 240,
+  "best_trial": 26,
+  "total_completed": 66,
+  "total_pruned": 9
+}

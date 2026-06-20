@@ -1,0 +1,69 @@
+{
+  "n_rows": 59731,
+  "n_participants": 16,
+  "regime_definition": {
+    "causal_signal": "inp_trans",
+    "causal_steady_threshold_le": 7.0,
+    "causal_transition_threshold_ge": 40.0,
+    "causal_n_steady": 20048,
+    "causal_n_transition": 20041,
+    "oracle_signal": "dvo2_s",
+    "oracle_steady_threshold_le": 0.1426358923884515,
+    "oracle_transition_threshold_ge": 0.2437387134502927,
+    "oracle_n_steady": 19910,
+    "oracle_n_transition": 19911
+  },
+  "family_penalty_causal": {
+    "Linear": {
+      "ratio": 1.5737506103829588,
+      "ci": [
+        1.3073440304010207,
+        1.8566147062362064
+      ]
+    },
+    "Tree": {
+      "ratio": 1.5567019017862267,
+      "ci": [
+        1.3384194829975238,
+        1.7754048702852439
+      ]
+    },
+    "Temporal": {
+      "ratio": 1.5374472428027401,
+      "ci": [
+        1.3133861430180243,
+        1.805024402617011
+      ]
+    }
+  },
+  "family_penalty_oracle": {
+    "Linear": {
+      "ratio": 1.8087361231830377,
+      "ci": [
+        1.4981297115195042,
+        2.162350192922157
+      ]
+    },
+    "Tree": {
+      "ratio": 1.6841996527271899,
+      "ci": [
+        1.4363169066317076,
+        2.0063477590577
+      ]
+    },
+    "Temporal": {
+      "ratio": 1.6866128056816283,
+      "ci": [
+        1.5351236553000112,
+        1.846302323378097
+      ]
+    }
+  },
+  "detector_quality": {
+    "event": "|PATCHTST-y_true| < |RIDGE-y_true| (PatchTST beats Ridge)",
+    "event_rate": 0.5354673452646029,
+    "auc_inp_trans": 0.4751222192483418,
+    "spearman_inp_trans_vs_dvo2_s": 0.2268079368162381,
+    "spearman_p": 0.0
+  }
+}

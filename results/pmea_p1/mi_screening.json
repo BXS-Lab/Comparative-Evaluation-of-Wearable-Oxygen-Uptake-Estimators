@@ -1,0 +1,14 @@
+{
+  "MI_individual": {
+    "BF": 0.193,
+    "VE": 0.407,
+    "ACC": 0.539,
+    "HR": 0.4,
+    "CAD": 0.522,
+    "dHR": 0.042
+  },
+  "ridge_rmse_all": 2.7183,
+  "ridge_rmse_no_dHR": 2.8186,
+  "dHR_ablation_pct": 3.69,
+  "method": "10-bin histogram MI (nats) on 0.01 Hz pooled low-pass features; Ridge LOPO ablation"
+}

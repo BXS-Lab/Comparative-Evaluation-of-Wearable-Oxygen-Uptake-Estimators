@@ -1,0 +1,4 @@
+family,model,bias,naive_sd,naive_loa_lower,naive_loa_upper,vc_total_sd,vc_s_within,vc_s_between,vc_loa_lower,vc_loa_upper,vc_to_naive_width_ratio,lmm_tau,lmm_sigma,lmm_total_sd,lmm_singular_boundary,ppt_bias_min,ppt_bias_max,ppt_bias_range
+Temporal,PATCHTST,0.191,2.4505,-4.6119,4.994,2.467,2.1894,1.1371,-4.6442,5.0263,1.007,0.0,2.1891,2.1891,True,-1.5626,2.5923,4.1549
+Tree,RF,0.0794,2.5344,-4.8879,5.0467,2.5512,2.2688,1.1665,-4.9208,5.0795,1.007,0.0,2.2685,2.2685,True,-1.4733,2.3271,3.8004
+Linear,RIDGE,0.101,2.791,-5.3693,5.5712,2.8169,2.3711,1.5208,-5.42,5.6219,1.009,0.0,2.3708,2.3708,True,-2.2068,3.5399,5.7467

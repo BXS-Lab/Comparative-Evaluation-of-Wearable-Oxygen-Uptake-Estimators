@@ -1,0 +1,16 @@
+{
+  "params": {
+    "batch_size": 32,
+    "dropout": 0.1375481251834629,
+    "hidden_size": 128,
+    "lr": 0.00017687092049524085,
+    "num_layers": 1,
+    "weight_decay": 3.12636868887746e-06
+  },
+  "rmse": 2.264322710930982,
+  "filter_hz": 0.1,
+  "seq_length": 120,
+  "best_trial": 52,
+  "total_completed": 69,
+  "total_pruned": 6
+}

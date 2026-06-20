@@ -1,0 +1,23 @@
+
+===== GRU (epochs=100, max_folds=None) =====
+  gru fold 1/16 pid=1: direct=2.212 ridge=2.441 resid_k1=2.329
+  gru fold 2/16 pid=2: direct=2.184 ridge=2.225 resid_k1=2.278
+  gru fold 3/16 pid=3: direct=2.509 ridge=2.639 resid_k1=2.175
+  gru fold 4/16 pid=4: direct=2.257 ridge=2.276 resid_k1=2.196
+  gru fold 5/16 pid=5: direct=2.321 ridge=2.806 resid_k1=2.633
+  gru fold 6/16 pid=6: direct=1.979 ridge=2.012 resid_k1=2.228
+  gru fold 7/16 pid=7: direct=2.741 ridge=2.609 resid_k1=2.504
+  gru fold 8/16 pid=8: direct=2.509 ridge=3.343 resid_k1=2.974
+  gru fold 9/16 pid=9: direct=2.565 ridge=2.376 resid_k1=2.289
+  gru fold 10/16 pid=10: direct=2.153 ridge=2.171 resid_k1=2.169
+  gru fold 11/16 pid=11: direct=2.859 ridge=2.765 resid_k1=2.419
+  gru fold 12/16 pid=12: direct=2.429 ridge=3.115 resid_k1=2.331
+  gru fold 13/16 pid=13: direct=2.519 ridge=2.940 resid_k1=3.045
+  gru fold 14/16 pid=14: direct=3.867 ridge=4.953 resid_k1=4.158
+  gru fold 15/16 pid=15: direct=2.006 ridge=2.447 resid_k1=1.831
+  gru fold 16/16 pid=16: direct=2.411 ridge=3.223 resid_k1=2.433
+  SUMMARY gru: direct=2.470 resid_k1=2.499 resid_kLF=2.424 (k=0.70) p(direct vs kLF)=0.597 kLF<direct in 9/16
+
+=== FAIR TUNED RESIDUAL vs DIRECT (per-participant mean RMSE) ===
+model  n  k_mean  direct  ridge  resid_k1  resid_kLF  p_direct_vs_k1  p_direct_vs_kLF  kLF_better_n
+  gru 16   0.700   2.470  2.771     2.499      2.424           0.706            0.597             9

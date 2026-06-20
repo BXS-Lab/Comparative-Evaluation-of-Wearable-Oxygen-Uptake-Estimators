@@ -1,0 +1,19 @@
+{
+  "params": {
+    "batch_size": 32,
+    "channel_mode": "CD",
+    "d_model": 32,
+    "dropout": 0.2765698815919431,
+    "lr": 0.00010588920687589874,
+    "nhead": 4,
+    "num_layers": 4,
+    "patch_len": 12,
+    "weight_decay": 2.0725287865289976e-06
+  },
+  "rmse": 2.367143570159742,
+  "filter_hz": 0.05,
+  "seq_length": 60,
+  "best_trial": 35,
+  "total_completed": 82,
+  "total_pruned": 18
+}

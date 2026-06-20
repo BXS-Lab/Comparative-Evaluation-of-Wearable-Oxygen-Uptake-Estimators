@@ -1,0 +1,23 @@
+
+===== TFT (epochs=100, max_folds=None) =====
+  tft fold 1/16 pid=1: direct=2.267 ridge=2.450 resid_k1=2.343
+  tft fold 2/16 pid=2: direct=1.971 ridge=2.238 resid_k1=2.204
+  tft fold 3/16 pid=3: direct=2.330 ridge=2.659 resid_k1=2.347
+  tft fold 4/16 pid=4: direct=2.407 ridge=2.298 resid_k1=2.143
+  tft fold 5/16 pid=5: direct=3.175 ridge=2.839 resid_k1=3.069
+  tft fold 6/16 pid=6: direct=1.697 ridge=1.999 resid_k1=2.110
+  tft fold 7/16 pid=7: direct=2.347 ridge=2.640 resid_k1=2.512
+  tft fold 8/16 pid=8: direct=2.488 ridge=3.383 resid_k1=2.706
+  tft fold 9/16 pid=9: direct=2.134 ridge=2.403 resid_k1=2.484
+  tft fold 10/16 pid=10: direct=2.507 ridge=2.196 resid_k1=3.729
+  tft fold 11/16 pid=11: direct=2.575 ridge=2.772 resid_k1=2.339
+  tft fold 12/16 pid=12: direct=2.829 ridge=3.085 resid_k1=2.186
+  tft fold 13/16 pid=13: direct=2.803 ridge=2.948 resid_k1=3.020
+  tft fold 14/16 pid=14: direct=3.945 ridge=4.959 resid_k1=5.357
+  tft fold 15/16 pid=15: direct=1.667 ridge=2.482 resid_k1=1.812
+  tft fold 16/16 pid=16: direct=2.955 ridge=3.245 resid_k1=2.626
+  SUMMARY tft: direct=2.506 resid_k1=2.687 resid_kLF=2.631 (k=0.56) p(direct vs kLF)=0.298 kLF<direct in 6/16
+
+=== FAIR TUNED RESIDUAL vs DIRECT (per-participant mean RMSE) ===
+model  n  k_mean  direct  ridge  resid_k1  resid_kLF  p_direct_vs_k1  p_direct_vs_kLF  kLF_better_n
+  tft 16   0.555   2.506  2.787     2.687      2.631           0.298            0.298             6

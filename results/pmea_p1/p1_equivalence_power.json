@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "n_participants": 16,
+    "alpha": 0.05,
+    "target_power": 0.8,
+    "margins_mL_kg_min": [
+      0.25,
+      0.5
+    ],
+    "unit_of_analysis": "per-participant RMSE over 16 LOPO held-out participants",
+    "iid_justification": "Per-second (1 Hz) samples within a participant are strongly autocorrelated and are not independent; however the 16 held-out participants are mutually independent (LOPO folds use disjoint rows and no participant contributes to another's held-out RMSE). Each per-participant RMSE aggregates the within-participant autocorrelation into a single number, so the 16 RMSE values are treated as the i.i.d. sampling unit for paired inference.",
+    "data": "results/pmea_p0/master_aligned.parquet"
+  },
+  "leaderboard_per_participant_mean_RMSE": {
+    "TCN": 2.4315,
+    "PATCHTST": 2.4344,
+    "XGB": 2.4774,
+    "GRU": 2.4826,
+    "TFT": 2.5062,
+    "RF": 2.5075,
+    "LSTM": 2.5202,
+    "RIDGE": 2.7393,
+    "ELASTICNET": 2.7539,
+    "LASSO": 2.77,
+    "LINEAR": 2.79
+  },
+  "contrasts": {
+    "TCN_vs_XGB": {
+      "A": "TCN",
+      "B": "XGB",
+      "mean_RMSE_A": 2.4315448180361323,
+      "mean_RMSE_B": 2.477370617734384,
+      "observed_gap_signed_A_minus_B": -0.045825799698251846,
+      "observed_gap_abs": 0.045825799698251846,
+      "sd_paired_diff": 0.3695291082242092,
+      "se_paired_diff": 0.0923822770560523,
+      "cohen_dz": -0.1240113395084624,
+      "paired_t": -0.4960453580338496,
+      "paired_p_twosided": 0.6270517809863004,
+      "ci95_meandiff": [
+        -0.2427339621471099,
+        0.15108236275060638
+      ],
+      "MDE_abs_mean_diff": 0.2769493712617326,
+      "MDE_ncp_at_power80": 2.9978625780537485,
+      "observed_gap_below_MDE": true,
+      "achieved_power_for_observed_gap": 0.07512312502635989,
+      "TOST": {
+        "0.25": {
+          "mean_diff": -0.04582579969825175,
+          "sd_diff": 0.3695291082242092,
+          "se_diff": 0.0923822770560523,
+          "t_lower": 2.210101404816716,
+          "p_lower": 0.021528447104587407,
+          "t_upper": -3.202192120884415,
+          "p_upper": 0.002968570849578364,
+          "p_tost": 0.021528447104587407,
+          "equivalent": true,
+          "margin": 0.25
+        },
+        "0.50": {
+          "mean_diff": -0.04582579969825175,
+          "sd_diff": 0.3695291082242092,
+          "se_diff": 0.0923822770560523,
+          "t_lower": 4.916248167667281,
+          "p_lower": 9.317594287452558e-05,
+          "t_upper": -5.90833888373498,
+          "p_upper": 1.4361727740092719e-05,
+          "p_tost": 9.317594287452558e-05,
+          "equivalent": true,
+          "margin": 0.5
+        }
+      }
+    },
+    "TCN_vs_RIDGE": {
+      "A": "TCN",
+      "B": "RIDGE",
+      "mean_RMSE_A": 2.4315448180361323,
+      "mean_RMSE_B": 2.7393238377188256,
+      "observed_gap_signed_A_minus_B": -0.3077790196826933,
+      "observed_gap_abs": 0.3077790196826933,
+      "sd_paired_diff": 0.34333174520876,
+      "se_paired_diff": 0.08583293630219,
+      "cohen_dz": -0.8964478932629754,
+      "paired_t": -3.5857915730519014,
+      "paired_p_twosided": 0.0027032958887320095,
+      "ci95_meandiff": [
+        -0.4907275927580187,
+        -0.12483044660736833
+      ],
+      "MDE_abs_mean_diff": 0.25731534770480646,
+      "MDE_ncp_at_power80": 2.9978625780537485,
+      "observed_gap_below_MDE": false,
+      "achieved_power_for_observed_gap": 0.9174832496525615,
+      "TOST": {
+        "0.25": {
+          "mean_diff": -0.3077790196826935,
+          "sd_diff": 0.34333174520876,
+          "se_diff": 0.08583293630219,
+          "t_lower": -0.6731567411287466,
+          "p_lower": 0.7444567492556327,
+          "t_upper": -6.498426404975056,
+          "p_upper": 5.0289240344366e-06,
+          "p_tost": 0.7444567492556327,
+          "equivalent": false,
+          "margin": 0.25
+        },
+        "0.50": {
+          "mean_diff": -0.3077790196826935,
+          "sd_diff": 0.34333174520876,
+          "se_diff": 0.08583293630219,
+          "t_lower": 2.239478090794408,
+          "p_lower": 0.02035093785563337,
+          "t_upper": -9.411061236898211,
+          "p_upper": 5.5189965988055316e-08,
+          "p_tost": 0.02035093785563337,
+          "equivalent": true,
+          "margin": 0.5
+        }
+      }
+    },
+    "XGB_vs_RIDGE": {
+      "A": "XGB",
+      "B": "RIDGE",
+      "mean_RMSE_A": 2.477370617734384,
+      "mean_RMSE_B": 2.7393238377188256,
+      "observed_gap_signed_A_minus_B": -0.26195321998444143,
+      "observed_gap_abs": 0.26195321998444143,
+      "sd_paired_diff": 0.22806910670093272,
+      "se_paired_diff": 0.05701727667523318,
+      "cohen_dz": -1.1485695005941392,
+      "paired_t": -4.594278002376557,
+      "paired_p_twosided": 0.0003509421222614487,
+      "ci95_meandiff": [
+        -0.3834826684428977,
+        -0.1404237715259858
+      ],
+      "MDE_abs_mean_diff": 0.17092996004721842,
+      "MDE_ncp_at_power80": 2.9978625780537485,
+      "observed_gap_below_MDE": false,
+      "achieved_power_for_observed_gap": 0.989940525252372,
+      "TOST": {
+        "0.25": {
+          "mean_diff": -0.26195321998444177,
+          "sd_diff": 0.22806910670093272,
+          "se_diff": 0.05701727667523318,
+          "t_lower": -0.2096420713414033,
+          "p_lower": 0.5816161058140539,
+          "t_upper": -8.978913933411711,
+          "p_upper": 1.0105979905053988e-07,
+          "p_tost": 0.5816161058140539,
+          "equivalent": false,
+          "margin": 0.25
+        },
+        "0.50": {
+          "mean_diff": -0.26195321998444177,
+          "sd_diff": 0.22806910670093272,
+          "se_diff": 0.05701727667523318,
+          "t_lower": 4.174993859693751,
+          "p_lower": 0.000406481718052841,
+          "t_upper": -13.363549864446865,
+          "p_upper": 4.899791137065331e-10,
+          "p_tost": 0.000406481718052841,
+          "equivalent": true,
+          "margin": 0.5
+        }
+      }
+    },
+    "Temporal_vs_Tree": {
+      "A": "Temporal",
+      "B": "Tree",
+      "mean_RMSE_A": 2.474975426047527,
+      "mean_RMSE_B": 2.4924255118051413,
+      "observed_gap_signed_A_minus_B": -0.017450085757614087,
+      "observed_gap_abs": 0.017450085757614087,
+      "sd_paired_diff": 0.27177171748376244,
+      "se_paired_diff": 0.06794292937094061,
+      "cohen_dz": -0.0642086156689814,
+      "paired_t": -0.2568344626759256,
+      "paired_p_twosided": 0.800796040917713,
+      "ci95_meandiff": [
+        -0.16226701168927443,
+        0.12736684017404665
+      ],
+      "MDE_abs_mean_diff": 0.20368356540449176,
+      "MDE_ncp_at_power80": 2.9978625780537485,
+      "observed_gap_below_MDE": true,
+      "achieved_power_for_observed_gap": 0.05666998661201624,
+      "TOST": {
+        "0.25": {
+          "mean_diff": -0.017450085757613892,
+          "sd_diff": 0.27177171748376244,
+          "se_diff": 0.06794292937094061,
+          "t_lower": 3.422724283387292,
+          "p_lower": 0.0018887339464792178,
+          "t_upper": -3.9363932087391427,
+          "p_upper": 0.0006597983203498055,
+          "p_tost": 0.0018887339464792178,
+          "equivalent": true,
+          "margin": 0.25
+        },
+        "0.50": {
+          "mean_diff": -0.017450085757613892,
+          "sd_diff": 0.27177171748376244,
+          "se_diff": 0.06794292937094061,
+          "t_lower": 7.10228302945051,
+          "p_lower": 1.8054174102279386e-06,
+          "t_upper": -7.615951954802361,
+          "p_upper": 7.849087045831394e-07,
+          "p_tost": 1.8054174102279386e-06,
+          "equivalent": true,
+          "margin": 0.5
+        }
+      }
+    }
+  }
+}

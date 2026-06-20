@@ -1,0 +1,22 @@
+{
+  "GRU": {
+    "filter_hz": 0.1,
+    "seq_length": 120
+  },
+  "LSTM": {
+    "filter_hz": 0.2,
+    "seq_length": 240
+  },
+  "TCN": {
+    "filter_hz": 0.2,
+    "seq_length": 240
+  },
+  "TFT": {
+    "filter_hz": 0.03,
+    "seq_length": 240
+  },
+  "PATCHTST": {
+    "filter_hz": 0.05,
+    "seq_length": 60
+  }
+}
