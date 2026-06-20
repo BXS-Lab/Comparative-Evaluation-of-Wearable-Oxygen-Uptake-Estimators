@@ -1,0 +1,39 @@
+{
+  "title": "Comparative Evaluation of Wearable Oxygen-Uptake Estimators Using Persistence, Transition, and Equivalence Analyses: analysis code and result artefacts",
+  "description": "All analysis code reproducing the paper: preprocessing, per-fold linear training, temporal and tree hyperparameter tuning (Optuna under a 16-fold leave-one-participant-out RMSE objective), statistical analyses (significance, equivalence/power, transition, Bland-Altman agreement, mutual information, predictability horizon), and figure/table generation, together with the shipped prediction and result artefacts. The raw dataset is the publicly available dataset of Beltrame, Amelard, Wong & Hughson (2017), Scientific Reports 7:45738 (CC BY 4.0).",
+  "upload_type": "software",
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Li, Kaisheng",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California, Davis",
+      "orcid": "0009-0000-7030-7890"
+    },
+    {
+      "name": "Zhu, Huanglun A.",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California, Davis",
+      "orcid": "0009-0003-8318-3657"
+    },
+    {
+      "name": "Zhang, Haozheng",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California, Davis",
+      "orcid": "0009-0008-7305-6546"
+    },
+    {
+      "name": "Whittle, Richard S.",
+      "affiliation": "Department of Mechanical and Aerospace Engineering, University of California, Davis",
+      "orcid": "0000-0002-7437-5433"
+    }
+  ],
+  "keywords": [
+    "oxygen uptake",
+    "VO2",
+    "wearable sensors",
+    "machine learning",
+    "leave-one-participant-out cross-validation",
+    "equivalence testing",
+    "time-series prediction"
+  ]
+}

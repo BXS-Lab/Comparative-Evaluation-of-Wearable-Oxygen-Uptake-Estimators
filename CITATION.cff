@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or its result artefacts, please cite it using these metadata."
+title: "Comparative Evaluation of Wearable Oxygen-Uptake Estimators Using Persistence, Transition, and Equivalence Analyses: analysis code and result artefacts"
+version: 1.0.0
+type: software
+license: MIT
+repository-code: "https://github.com/BXS-Lab/Comparative-Evaluation-of-Wearable-Oxygen-Uptake-Estimators"
+authors:
+  - family-names: Li
+    given-names: Kaisheng
+    orcid: "https://orcid.org/0009-0000-7030-7890"
+    affiliation: "Department of Mechanical and Aerospace Engineering, University of California, Davis"
+  - family-names: Zhu
+    given-names: Huanglun A.
+    orcid: "https://orcid.org/0009-0003-8318-3657"
+    affiliation: "Department of Mechanical and Aerospace Engineering, University of California, Davis"
+  - family-names: Zhang
+    given-names: Haozheng
+    orcid: "https://orcid.org/0009-0008-7305-6546"
+    affiliation: "Department of Mechanical and Aerospace Engineering, University of California, Davis"
+  - family-names: Whittle
+    given-names: Richard S.
+    orcid: "https://orcid.org/0000-0002-7437-5433"
+    affiliation: "Department of Mechanical and Aerospace Engineering, University of California, Davis"
