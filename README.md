@@ -1,5 +1,7 @@
 # Comparative Evaluation of Wearable Oxygen-Uptake Estimators — code and result artefacts
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23656206.svg)](https://doi.org/10.5281/zenodo.23656206)
+
 Analysis code and result artefacts for *Comparative Evaluation of Wearable Oxygen-Uptake Estimators Using
 Baseline-Relative, Transition, and Equivalence Analyses* (Li, Zhu, Zhang & Whittle).
 
@@ -93,5 +95,5 @@ steps 4–5 only need the stored results in `results_r1/`.
 
 ## Licence and citation
 
-Code: MIT licence (`LICENSE`). Please cite the article and this archive (`CITATION.cff`). The primary dataset is
+Code: MIT licence (`LICENSE`). Please cite the article and this archive: version 2.0.0, https://doi.org/10.5281/zenodo.23656206 (all versions: https://doi.org/10.5281/zenodo.20768308; see also `CITATION.cff`). The primary dataset is
 redistributed under its original CC BY 4.0 licence; see `data/README.md`.
