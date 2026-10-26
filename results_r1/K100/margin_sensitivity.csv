@@ -1,0 +1,10 @@
+dataset,contrast,n,sd_vo2,delta_star,delta_star_over_sd,p_holm,class_0.03sd,class_0.05sd,class_0.08sd,class_0.10sd
+BEL,Temporal - Tree,16,5.314337154557566,0.2186765516530459,0.041148415182034374,0.433197021484375,Not resolved,Equivalent,Equivalent,Equivalent
+BEL,Temporal - Linear,16,5.314337154557566,0.4261530784202932,0.08018931919944618,0.003021240234375,Temporal better,Temporal better,Temporal better,Equivalent (Temporal better within margin)
+BEL,Tree - Linear,16,5.314337154557566,0.408670557689714,0.07689962939954588,0.0579833984375,Not resolved,Not resolved,Equivalent (borderline),Equivalent
+WEEE,Temporal - Tree,15,7.805939043920172,0.6133684789256514,0.07857715458377644,0.037353515625,Tree better,Tree better,Equivalent (Tree better within margin),Equivalent (Tree better within margin)
+WEEE,Temporal - Linear,15,7.805939043920172,0.7741818861508398,0.09917857182779674,0.71826171875,Not resolved,Not resolved,Not resolved,Equivalent (borderline)
+WEEE,Tree - Linear,15,7.805939043920172,0.707440842099443,0.09062853785034986,0.97796630859375,Not resolved,Not resolved,Not resolved,Equivalent
+ING,Temporal - Tree,10,8.82091367923782,0.4314644330813653,0.048913802897416675,0.431640625,Not resolved,Equivalent (borderline),Equivalent,Equivalent
+ING,Temporal - Linear,10,8.82091367923782,0.5854441618851939,0.06637001371674002,0.09765625,Not resolved,Not resolved,Equivalent,Equivalent
+ING,Tree - Linear,10,8.82091367923782,0.7186381184424571,0.08146980512165625,0.017578125,Tree better,Tree better,Tree better,Equivalent (Tree better within margin)

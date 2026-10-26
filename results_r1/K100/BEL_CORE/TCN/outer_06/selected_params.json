@@ -1,0 +1,16 @@
+{
+  "cutoff": "None",
+  "L": 240,
+  "kernel_size": 5,
+  "num_levels": 8,
+  "base_channels": 32,
+  "dropout": 0.20207419824262363,
+  "lr": 0.0007287422841186541,
+  "batch_size": 32,
+  "weight_decay": 0.0,
+  "trial": 19,
+  "inner_score": 2.3153519135996308,
+  "n_complete": 29,
+  "n_pruned": 71,
+  "es_outer": 7
+}

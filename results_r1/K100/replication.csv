@@ -1,0 +1,13 @@
+dataset,criterion,contrast,BEL,external,status
+WEEE,R1,Temporal - Linear,ML better,unresolved,not resolved externally
+WEEE,R1,Tree - Linear,unresolved,unresolved,BEL unresolved
+WEEE,R2,Temporal - Tree,O1,O2-Tree,contradicted
+WEEE,R3,Linear,1.49 robust,1.05 point-only,replicated
+WEEE,R3,Tree,1.50 robust,1.23 point-only,replicated
+WEEE,R3,Temporal,1.48 robust,1.12 point-only,replicated
+ING,R1,Temporal - Linear,ML better,unresolved,not resolved externally
+ING,R1,Tree - Linear,unresolved,ML better,BEL unresolved
+ING,R2,Temporal - Tree,O1,O1,replicated
+ING,R3,Linear,1.49 robust,1.12 robust,replicated
+ING,R3,Tree,1.50 robust,1.17 robust,replicated
+ING,R3,Temporal,1.48 robust,1.10 robust,replicated

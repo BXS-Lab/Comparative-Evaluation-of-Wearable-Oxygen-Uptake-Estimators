@@ -1,0 +1,13 @@
+family,pen,lo,hi,R3,claim,variant
+Linear,1.123993251087158,1.0861459442834633,1.163159366509374,robust,True,primary (all grid rows)
+Tree,1.1706777519132718,1.105144835081808,1.2400966419240986,robust,True,primary (all grid rows)
+Temporal,1.1029536308034955,1.0526539668405261,1.1556567970326288,robust,True,primary (all grid rows)
+Linear,1.1290037869512446,1.0942772033050652,1.1648324091010982,robust,True,exclude rows nearest a bad breath
+Tree,1.1779208100553036,1.1144305428356347,1.2450281838389832,robust,True,exclude rows nearest a bad breath
+Temporal,1.1101212079782494,1.0639008419859242,1.1583495827512396,robust,True,exclude rows nearest a bad breath
+Linear,1.1338999486145598,1.101187355223329,1.1675843237478383,robust,True,exclude rows in the interpolation span of a bad breath
+Tree,1.1853710364977896,1.1247945808993183,1.2492098717655689,robust,True,exclude rows in the interpolation span of a bad breath
+Temporal,1.116272473143504,1.0725168565513743,1.1618131935982565,robust,True,exclude rows in the interpolation span of a bad breath
+Linear,1.1311641156768646,1.0965635061560355,1.166856501617839,robust,True,"re-score against cleaned target (bad breaths removed, re-interpolated)"
+Tree,1.1848051233292243,1.1234742131545714,1.2494841126131337,robust,True,"re-score against cleaned target (bad breaths removed, re-interpolated)"
+Temporal,1.1168465964925458,1.0721256412816176,1.1634329709770836,robust,True,"re-score against cleaned target (bad breaths removed, re-interpolated)"

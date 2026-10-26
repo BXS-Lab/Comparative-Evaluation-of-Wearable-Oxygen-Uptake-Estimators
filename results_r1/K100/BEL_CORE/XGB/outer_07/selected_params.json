@@ -1,0 +1,14 @@
+{
+  "cutoff": "0.01",
+  "n_estimators": 445,
+  "learning_rate": 0.04370321076767181,
+  "max_depth": 4,
+  "subsample": 0.5848875081265892,
+  "colsample_bytree": 0.893522916750913,
+  "gamma": 3.3121344224720057,
+  "reg_alpha": 0.2464753934403624,
+  "reg_lambda": 1.986329598328002,
+  "inner_score": 2.6189775250610166,
+  "n_complete": 47,
+  "n_pruned": 53
+}

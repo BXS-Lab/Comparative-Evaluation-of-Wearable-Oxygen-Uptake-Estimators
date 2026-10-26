@@ -1,0 +1,15 @@
+{
+  "cutoff": "0.05",
+  "L": 120,
+  "hidden_size": 48,
+  "num_heads": 4,
+  "dropout": 0.20604667123122838,
+  "lr": 0.0009457382832890474,
+  "batch_size": 128,
+  "weight_decay": 0.000909803914413748,
+  "trial": 24,
+  "inner_score": 4.27404146332931,
+  "n_complete": 25,
+  "n_pruned": 75,
+  "es_outer": 2
+}

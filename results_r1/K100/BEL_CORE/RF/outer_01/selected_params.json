@@ -1,0 +1,10 @@
+{
+  "cutoff": "0.01",
+  "n_estimators": 798,
+  "max_depth": 10,
+  "min_samples_leaf": 5,
+  "max_features": "log2",
+  "inner_score": 2.566490671515133,
+  "n_complete": 28,
+  "n_pruned": 32
+}

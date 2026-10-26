@@ -1,0 +1,11 @@
+{
+  "rho_pooled": 0.22675923384946636,
+  "rho_cluster_boot_lo": 0.17473496647613032,
+  "rho_cluster_boot_hi": 0.29701994832293327,
+  "rho_per_participant_median": 0.27017190348282194,
+  "rho_per_participant_min": 0.12850906004033513,
+  "rho_per_participant_max": 0.5406018348166983,
+  "n_samples": 59731,
+  "n_boot": 2000,
+  "agreement_same_stratum": 0.4021697276121277
+}

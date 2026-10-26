@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+outputs/
+data/external/cache/
+data/external/weee_raw/
+data/external/ingraham_raw/

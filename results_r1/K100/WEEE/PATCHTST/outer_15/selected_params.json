@@ -1,0 +1,18 @@
+{
+  "cutoff": "None",
+  "L": 60,
+  "patch_len": 24,
+  "d_model": 96,
+  "nhead": 4,
+  "num_layers": 3,
+  "channel_mode": "CD",
+  "dropout": 0.2646932274433777,
+  "lr": 0.00010553296418181129,
+  "batch_size": 64,
+  "weight_decay": 0.0008200990092564855,
+  "trial": 71,
+  "inner_score": 4.459047755852203,
+  "n_complete": 32,
+  "n_pruned": 68,
+  "es_outer": 16
+}

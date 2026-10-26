@@ -1,0 +1,13 @@
+features,filtering,h_pooled,h_median,h_q1,h_q3,h_median_ci_lo,h_median_ci_hi,undetermined
+all,zero_phase_0.05Hz,60,48.0,-3.5,60.0,-16.0,60.0,True
+HR,zero_phase_0.05Hz,5,8.0,3.5,60.0,3.0,60.0,False
+dHR,zero_phase_0.05Hz,60,60.0,60.0,60.0,60.0,60.0,True
+BR,zero_phase_0.05Hz,60,60.0,50.25,60.0,21.0,60.0,True
+BRAmplitude,zero_phase_0.05Hz,60,60.0,60.0,60.0,60.0,60.0,True
+Activity,zero_phase_0.05Hz,60,60.0,60.0,60.0,60.0,60.0,True
+all,unfiltered,60,49.0,3.0,60.0,0.0,60.0,True
+HR,unfiltered,2,10.0,2.0,60.0,2.0,60.0,False
+dHR,unfiltered,60,60.0,60.0,60.0,60.0,60.0,True
+BR,unfiltered,60,60.0,50.25,60.0,21.0,60.0,True
+BRAmplitude,unfiltered,60,60.0,60.0,60.0,60.0,60.0,True
+Activity,unfiltered,60,60.0,60.0,60.0,60.0,60.0,True

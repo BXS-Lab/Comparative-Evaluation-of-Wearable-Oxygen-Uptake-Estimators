@@ -1,0 +1,10 @@
+{
+  "dataset": "WEEE_ALL",
+  "n": 17,
+  "contrast": "Tree - Linear",
+  "mean_diff": -0.1021134962037757,
+  "ci95_lo": -0.6392959718991813,
+  "ci95_hi": 0.43506897949162987,
+  "p_exact_wilcoxon": 0.926513671875,
+  "class": "unresolved"
+}

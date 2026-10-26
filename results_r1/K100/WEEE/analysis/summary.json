@@ -1,0 +1,11 @@
+{
+  "n_participants": 15,
+  "sd_y": 7.805939043920172,
+  "m_strict": 0.39029695219600863,
+  "m_lenient": 0.7805939043920173,
+  "friedman_chi2": 12.448484848484895,
+  "iman_davenport_F": 1.2670074021854123,
+  "omnibus_p": 0.2547826356291268,
+  "pairwise_tested": false,
+  "n_pairs_holm_sig": null
+}

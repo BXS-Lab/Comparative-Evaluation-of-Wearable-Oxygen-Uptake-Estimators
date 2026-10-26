@@ -1,0 +1,15 @@
+features,filtering,h_pooled,h_median,h_q1,h_q3,h_median_ci_lo,h_median_ci_hi,undetermined
+all,zero_phase_0.05Hz,-5,-4.0,-7.5,4.0,-7.0,4.0,False
+BF,zero_phase_0.05Hz,-16,-4.0,-25.25,9.25,-25.0,9.5,False
+VE,zero_phase_0.05Hz,7,7.5,4.75,12.5,5.0,12.0,False
+ACC,zero_phase_0.05Hz,-18,-10.0,-18.0,-3.0,-18.0,-3.0,False
+HR,zero_phase_0.05Hz,0,0.0,-4.25,4.75,-4.0,4.0,False
+CAD,zero_phase_0.05Hz,-8,-4.5,-12.25,0.25,-12.0,0.0,False
+dHR,zero_phase_0.05Hz,33,26.5,-3.5,31.0,-13.0,30.0,False
+all,unfiltered,-4,-3.5,-9.0,2.0,-9.0,2.0,False
+BF,unfiltered,-14,-3.0,-25.25,10.0,-25.0,10.0,False
+VE,unfiltered,7,7.5,5.75,12.5,6.0,12.0,False
+ACC,unfiltered,-19,-12.0,-20.25,-2.0,-20.0,-2.0,False
+HR,unfiltered,0,0.5,-4.25,4.5,-4.0,4.0,False
+CAD,unfiltered,-7,-4.5,-11.0,1.0,-11.0,1.0,False
+dHR,unfiltered,-52,-39.5,-53.25,25.5,-53.0,25.0,True
