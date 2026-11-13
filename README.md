@@ -123,5 +123,5 @@ family-level presentation of the same results (version 2.0.0) and are not used i
 
 ## Licence and citation
 
-Code: MIT licence (`LICENSE`). Please cite the article and this archive: version 2.1.0, DOI_TO_BE_ADDED (all versions: https://doi.org/10.5281/zenodo.20768308; see also `CITATION.cff`). The primary dataset is
+Code: MIT licence (`LICENSE`). Please cite the article and this archive: version 2.1.0, https://doi.org/10.5281/zenodo.24209830 (all versions: https://doi.org/10.5281/zenodo.20768308; see also `CITATION.cff`). The primary dataset is
 redistributed under its original CC BY 4.0 licence; see `data/README.md`.
