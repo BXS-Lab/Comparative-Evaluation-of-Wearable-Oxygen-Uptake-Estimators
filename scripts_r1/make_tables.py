@@ -67,16 +67,16 @@ def table1():
          "VO2 Master, 1\\,Hz app output (held breath values); normalised by body mass from the demographics file",
          "Oxycon Mobile, breath-by-breath, linearly interpolated to 1\\,Hz"),
         ("Inputs (1\\,Hz)", "HR, $\\Delta$HR, $\\dot{V}_\\mathrm{E}$, BF (Hexoskin shirt); Hacc, CAD",
-         "HR (Wahoo chest strap), $\\Delta$HR; BR, BR amplitude, activity (Zephyr chest strap; clock offset corrected where verifiable)",
+         "HR (Wahoo chest strap), $\\Delta$HR; breathing rate, breathing amplitude, activity (Zephyr chest strap; clock offset corrected where verifiable)",
          "HR (Polar strap), $\\Delta$HR; waist dynamic acceleration (APDM); BF from the criterion system$^{a}$"),
         ("Evaluation time per participant (median; total)", st["BEL"][1], st["WEEE"][1], st["ING"][1]),
         (f"{VO2} on the evaluation grid, mean $\\pm$ SD (1st--99th percentile), {U}", st["BEL"][0], st["WEEE"][0], st["ING"][0]),
         ("Transition marker", "Causal cadence-change detector (terciles)", "Protocol timing", "Protocol timing"),
     ]
     body = [r"\begin{table}[ht!]", r"\centering", r"\small",
-            r"\caption{The three public datasets. The same pipeline (nested leave-one-participant-out evaluation, causal per-segment filtering, 240\,s burn-in per segment) and the same pre-declared criteria were applied to each.}",
+            r"\caption{The three public datasets. The same pipeline (nested leave-one-participant-out evaluation, causal per-segment filtering, 240\,s burn-in per segment) and the same equivalence margin and classification rule were applied to each.}",
             r"\label{tab:datasets}", r"\begin{tabular}{p{0.15\linewidth}p{0.235\linewidth}p{0.235\linewidth}p{0.235\linewidth}}", r"\toprule",
-            r" & \citet{Main_paper_Beltrame2017} (primary) & WEEE \citep{Gashi2022} & \citet{Ingraham2019} \\", r"\midrule"]
+            r" & Beltrame et~al.~\cite{Main_paper_Beltrame2017} (primary) & WEEE \citep{Gashi2022} & Ingraham et~al.~\cite{Ingraham2019} \\", r"\midrule"]
     body += [" & ".join(r) + r" \\" for r in rows]
     body += [r"\bottomrule", r"\end{tabular}",
              r"\par\smallskip\raggedright\footnotesize $^{a}$ Used as a stand-in for a wearable respiration sensor (disclosed in Limitations).",
@@ -103,7 +103,7 @@ def table2():
         ("PatchTST$^{a}$", "100", "patch \\{12, 16, 20, 24\\} ($\\geq$2 patches); $d_\\mathrm{model}$ \\{32, \\ldots, 128\\}; heads \\{4, 8\\}; layers 2--4; channel-independent or -dependent; dropout 0.1--0.3; lr $10^{-4}$--$10^{-3}$ (log); weight decay $10^{-6}$--$10^{-2}$ (log)"),
     ]
     body = [r"\begin{table}[ht!]", r"\centering", r"\small",
-            r"\caption{Hyperparameter search spaces and budgets. Every selection was made inside the training participants of each outer fold (nested leave-one-participant-out): linear models by participant-grouped 5-fold inner cross-validation over the grid; tree and temporal models by Optuna (TPE sampler, median pruner) with participant-grouped 5-fold (trees) or 3-fold (temporal) inner cross-validation. Temporal training: stride 8, at most 60 epochs, early stopping (patience 10) on a dedicated outer-training participant, ReduceLROnPlateau, gradient clipping 1.0; three refit seeds per outer fold.}",
+            r"\caption{Hyperparameter search spaces and budgets. Every selection was made inside the training participants of each outer fold (nested leave-one-participant-out): linear models by participant-grouped 5-fold inner cross-validation over the grid; tree and temporal models by Optuna (tree-structured Parzen estimator, median pruner) with participant-grouped 5-fold (trees) or 3-fold (temporal) inner cross-validation. Temporal training: stride 8~s, at most 60 epochs, early stopping (patience 10) on a held-out training participant in every fit, ReduceLROnPlateau, gradient clipping 1.0; three refit seeds per outer fold.}",
             r"\label{tab:search}", r"\begin{tabular}{p{0.13\linewidth}p{0.07\linewidth}p{0.68\linewidth}}", r"\toprule",
             r"Model & Trials & Search space \\", r"\midrule"]
     for r in rows:

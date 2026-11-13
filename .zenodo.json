@@ -1,10 +1,10 @@
 {
-  "title": "Comparative Evaluation of Wearable Oxygen-Uptake Estimators Using Baseline-Relative, Transition, and Equivalence Analyses: analysis code and result artefacts",
-  "description": "Analysis code and result artefacts: data loading for three public datasets (Beltrame et al. 2017; WEEE, Gashi et al. 2022; Ingraham et al. 2019), causal per-participant preprocessing, nested leave-one-participant-out model selection and training of eleven linear, tree and temporal models, baseline-relative, transition-resolved, significance/equivalence and agreement analyses, figure and table generation, per-fold predictions and result tables, and the code of a previous, non-nested version of the analysis. The primary dataset (Beltrame et al. 2017, Scientific Reports 7:45738, CC BY 4.0) is included; the two external datasets are available from their own repositories.",
+  "title": "Comparative evaluation of models for estimating oxygen uptake from wearable sensors across datasets, activity transitions and participants: analysis code and result artefacts",
+  "description": "Analysis code and result artefacts: data loading for three public datasets (Beltrame et al. 2017; WEEE, Gashi et al. 2022; Ingraham et al. 2019), causal per-participant preprocessing, nested leave-one-participant-out model selection and training of eleven linear, tree and temporal models, baseline-relative, transition-resolved, significance/equivalence and agreement analyses, model-level comparison of all 55 model pairs on each dataset with Holm-adjusted exact Wilcoxon and two one-sided equivalence tests, post-hoc stratum analyses, figure and table generation, per-fold predictions and result tables, and the code of a previous, non-nested version of the analysis. The primary dataset (Beltrame et al. 2017, Scientific Reports 7:45738, CC BY 4.0) is included; the two external datasets are available from their own repositories.",
   "upload_type": "software",
   "license": "MIT",
   "access_right": "open",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "creators": [
     {"name": "Li, Kaisheng", "affiliation": "Department of Mechanical and Aerospace Engineering, University of California, Davis", "orcid": "0009-0000-7030-7890"},
     {"name": "Zhu, Huanglun A.", "affiliation": "Department of Mechanical and Aerospace Engineering, University of California, Davis", "orcid": "0009-0003-8318-3657"},

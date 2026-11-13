@@ -82,7 +82,7 @@ def s3_leaderboards():
             rows.append(f"{DS[d] if i == 0 else ''} & {F.MODEL_LABEL[r.model]} & {r.family} & {r.rmse:.3f} [{r.rmse_bca_lo:.2f}, {r.rmse_bca_hi:.2f}] & {r.r_pooled:.3f} & {r.r2_pooled:.3f} & {seed}")
         rows.append("\\midrule")
     rows = rows[:-1]
-    tab("supp_s3_leaderboards", f"Model comparison on the external datasets (nested leave-one-participant-out; WEEE $n=15$, Ingraham $n=10$). RMSE ({U}) is the mean of per-participant RMSE with BCa 95\\% CI; pooled $r$ and $R^2$; seed range as in Table~\\ref{{tab:model_comparison}}. No pairwise tests were performed (WEEE omnibus $p=0.25$; Ingraham $n<12$).",
+    tab("supp_s3_leaderboards", f"Model comparison on the external datasets (nested leave-one-participant-out; WEEE $n=15$, Ingraham $n=10$). RMSE ({U}) is the mean of per-participant RMSE with BCa 95\\% CI; pooled $r$ and $R^2$; seed range as in Table~\\ref{{tab:model_comparison}} of the main text. All pairwise comparisons are given in Table~\\ref{{tab:s_pairs}}.",
         "tab:s_leaderboards", "lllcccc", "Dataset & Model & Family & RMSE [95\\% CI] & $r$ & $R^2$ & Seed range", rows, size="\\scriptsize")
 
 
@@ -92,7 +92,7 @@ def s4_ba():
     for mm in F.MODEL_ORDER:
         r = ba.loc[mm]
         rows.append(f"{F.MODEL_LABEL[mm]} & {F.MODEL_FAMILY[mm]} & {m(r.bias)} & [{m(r.vc_loa_lo)}, {m(r.vc_loa_hi)}] & {r.s_within:.2f} & {r.s_between:.2f} & {m(r.ppt_bias_min)} to {m(r.ppt_bias_max)}")
-    tab("supp_s4_ba", f"Bland--Altman agreement of all eleven models on the primary dataset ({U}); columns as in Table~\\ref{{tab:ba}}.",
+    tab("supp_s4_ba", f"Bland--Altman agreement of all eleven models with indirect calorimetry on the primary dataset ({U}). Bias and repeated-measures (variance-component) 95\\% limits of agreement (LoA); $s_w$ and $s_b$ are the within- and between-participant standard deviations of the differences; the per-participant bias range spans the 16 participants' mean differences.",
         "tab:s_ba", "llccccc", "Model & Family & Bias & 95\\% LoA & $s_w$ & $s_b$ & Per-participant bias range", rows)
 
 
@@ -122,7 +122,8 @@ def s6_w4a():
             det = "undetermined" if r.undetermined else f"{r.h_pooled:+d}"
             ru = u.loc[r.features]
             unf = "undetermined" if ru.undetermined else f"{int(ru.h_pooled):+d}"
-            rows.append(f"{DS[d] if i == 0 else ''} & {name.get(r.features, r.features)} & {det} & {r1(r.h_median)} & [{r1(r.h_q1)}, {r1(r.h_q3)}] & [{r1(r.h_median_ci_lo)}, {r1(r.h_median_ci_hi)}] & {unf}".replace("-", "$-$"))
+            rows.append(f"{DS[d] if i == 0 else ''} & {name.get(r.features, r.features)} & {det} & {r1(r.h_median)} & [{r1(r.h_q1)}, {r1(r.h_q3)}] & [{r1(r.h_median_ci_lo)}, {r1(r.h_median_ci_hi)}] & {unf}"
+                        .replace("-", "$-$").replace("HR$-$screened", "HR-screened"))
         rows.append("\\midrule")
     rows = rows[:-1]
     tab("supp_s6_w4a", "Lag diagnostic: shift $h$ (s) minimising the RMSE of a ridge model predicting $\\dot{V}$O$_2(t-h)$ from the inputs at $t$ (zero-phase 0.05~Hz inputs; $h<0$: the signal leads $\\dot{V}$O$_2$). Pooled optimum of the mean curve (``undetermined'' if within 2~s of the $\\pm$60~s boundary or if the curve varies by less than 1\\%), per-participant median, interquartile range, and bootstrap 95\\% CI of the median. WEEE Zephyr features use only the four participants with a verified clock offset. The last column gives the pooled optimum with unfiltered inputs (sensitivity analysis). Values are effective response times of the processed signals, not physiological delays.",

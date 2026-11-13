@@ -159,6 +159,7 @@ def fig5():
     ax.fill_between(s.d, s.gain_bca_lo, s.gain_bca_hi, color=c, alpha=0.18, lw=0)
     ax.plot(s.d, s.gain_mean, color=c, marker="o", ms=3.5, lw=1.4)
     F.panel(ax, "A")
+    ax.set_title("Primary dataset (Beltrame): individual participants")
     ax = axes[1]
     for ds in ["BEL", "ING", "WEEE"]:
         s = pd.read_csv(K100 / ds / "analysis" / "w4b_summary.csv").query("learner == 'ridge'").sort_values("d")
@@ -167,9 +168,10 @@ def fig5():
         ax.plot(s.d, s.gain_mean, color=c, marker=F.DATASET_MARKER[ds], ms=3.5, lw=1.3)
         ax.text(s.d.iloc[-1] + 3, s.gain_mean.iloc[-1], F.DATASET_LABEL[ds].split(" (")[0], va="center", fontsize=7, color=F.INK)
     F.panel(ax, "B", x=-0.06)
+    ax.set_title("All datasets: mean and 95% CI")
     for ax in axes:
         ax.axhline(0, color=F.INK2, lw=0.6)
-        ax.set_xlabel(f"Staleness of the {F.VO2} history, $d$ (s)")
+        ax.set_xlabel(f"Delay of the {F.VO2} history, $d$ (s)")
         ax.set_xlim(0, 140)
     axes[0].set_ylabel("Gain of the sensor set, $1-\\mathrm{RMSE}_{h+s}/\\mathrm{RMSE}_{h}$")
     fig.tight_layout(w_pad=1.0)
@@ -198,7 +200,7 @@ def oracle_regime(panel):
 def fig6():
     panel = load("BEL")
     p = pred()
-    parts = [("Cadence detector (deployable)", E.bel_regime(panel), "transition.csv"),
+    parts = [("Cadence detector (causal)", E.bel_regime(panel), "transition.csv"),
              (f"Oracle ({F.VO2} rate of change)", oracle_regime(panel), "oracle_transition.csv")]
     fig, axes = plt.subplots(1, 2, figsize=(F.FULL, 2.8), sharey=True)
     strata = ["steady", "middle", "transition"]

@@ -1,0 +1,55 @@
+== BEL detector steady: n=16  resolved/equiv/not = 0/3/52; CI excl 0: 9; min P_Holm 0.117
+   ranking: TCN 1.86, GRU 1.86, RF 1.90, PATCHTST 1.96, XGB 2.02, TFT 2.03, LASSO 2.06, LSTM 2.07, RIDGE 2.09, ELASTICNET 2.10, OLS 2.19
+   top TCN vs 10: {'not resolved': 10}
+   RF-TCN: +0.045 [-0.13,0.22] P_Holm=1.000 D*=0.19 not resolved
+== BEL detector transition: n=16  resolved/equiv/not = 1/6/48; CI excl 0: 15; min P_Holm 0.017
+   ranking: GRU 2.75, TCN 2.76, RF 2.85, TFT 2.92, LSTM 2.98, XGB 2.98, LASSO 3.09, PATCHTST 3.10, OLS 3.14, RIDGE 3.15, ELASTICNET 3.15
+   top GRU vs 10: {'not resolved': 10}
+   resolved XGB-TCN: +0.222 [0.12,0.33] P_Holm=0.017
+   RF-TCN: +0.093 [-0.04,0.23] P_Holm=1.000 D*=0.21 not resolved
+== BEL detector gap: n=16  resolved/equiv/not = 0/4/51; CI excl 0: 2; min P_Holm 1.000
+   ranking: TFT 0.88, GRU 0.89, TCN 0.91, LSTM 0.91, RF 0.95, OLS 0.95, XGB 0.96, LASSO 1.03, RIDGE 1.06, ELASTICNET 1.06, PATCHTST 1.13
+   top TFT vs 10: {'not resolved': 10}
+   RF-TCN: +0.048 [-0.14,0.23] P_Holm=1.000 D*=0.20 not resolved
+== BEL oracle steady: n=16  resolved/equiv/not = 2/7/46; CI excl 0: 20; min P_Holm 0.012
+   ranking: GRU 1.87, TCN 1.88, TFT 1.97, PATCHTST 2.02, RF 2.02, XGB 2.13, LSTM 2.16, LASSO 2.23, ELASTICNET 2.27, RIDGE 2.27, OLS 2.30
+   top GRU vs 10: {'not resolved': 7, 'resolved': 2, 'equivalent': 1}
+   resolved OLS-GRU: +0.437 [0.27,0.60] P_Holm=0.012
+   resolved LSTM-GRU: +0.292 [0.17,0.41] P_Holm=0.012
+   RF-TCN: +0.141 [-0.05,0.33] P_Holm=1.000 D*=0.30 not resolved
+== BEL oracle transition: n=16  resolved/equiv/not = 4/6/45; CI excl 0: 21; min P_Holm 0.003
+   ranking: TCN 2.96, GRU 3.09, RF 3.24, LSTM 3.26, TFT 3.31, XGB 3.32, PATCHTST 3.44, OLS 3.56, RIDGE 3.58, LASSO 3.60, ELASTICNET 3.61
+   top TCN vs 10: {'not resolved': 6, 'resolved': 4}
+   resolved OLS-TCN: +0.601 [0.32,0.89] P_Holm=0.016
+   resolved LASSO-TCN: +0.638 [0.32,0.95] P_Holm=0.023
+   resolved ELASTICNET-TCN: +0.647 [0.34,0.95] P_Holm=0.030
+   resolved XGB-TCN: +0.360 [0.11,0.61] P_Holm=0.003
+   RF-TCN: +0.285 [0.01,0.56] P_Holm=0.563 D*=0.51 not resolved
+== BEL oracle gap: n=16  resolved/equiv/not = 0/4/51; CI excl 0: 3; min P_Holm 0.853
+   ranking: TCN 1.08, LSTM 1.10, XGB 1.19, RF 1.22, GRU 1.23, OLS 1.26, RIDGE 1.31, ELASTICNET 1.34, TFT 1.34, LASSO 1.37, PATCHTST 1.42
+   top TCN vs 10: {'not resolved': 10}
+   RF-TCN: +0.144 [-0.15,0.44] P_Holm=1.000 D*=0.38 not resolved
+== WEEE protocol steady: n=15  resolved/equiv/not = 0/0/55; CI excl 0: 7; min P_Holm 0.564
+   ranking: XGB 4.20, RF 4.32, GRU 4.64, RIDGE 4.72, TFT 4.79, TCN 4.87, ELASTICNET 4.90, LSTM 4.93, LASSO 4.96, OLS 5.04, PATCHTST 5.11
+   top XGB vs 10: {'not resolved': 10}
+   RF-TCN: -0.541 [-1.49,0.41] P_Holm=1.000 D*=1.32 not resolved
+== WEEE protocol transition: n=15  resolved/equiv/not = 0/2/53; CI excl 0: 4; min P_Holm 0.295
+   ranking: RF 4.60, XGB 4.78, LASSO 4.89, OLS 4.91, ELASTICNET 4.97, RIDGE 5.01, LSTM 5.06, PATCHTST 5.12, GRU 5.16, TFT 5.17, TCN 5.33
+   top RF vs 10: {'not resolved': 10}
+   RF-TCN: -0.723 [-1.33,-0.12] P_Holm=0.295 D*=1.22 not resolved
+== WEEE protocol gap: n=15  resolved/equiv/not = 0/0/55; CI excl 0: 1; min P_Holm 1.000
+   ranking: OLS -0.13, LASSO -0.07, PATCHTST 0.01, ELASTICNET 0.07, LSTM 0.13, RF 0.28, RIDGE 0.29, TFT 0.38, TCN 0.46, GRU 0.52, XGB 0.58
+   top OLS vs 10: {'not resolved': 10}
+   RF-TCN: -0.182 [-1.18,0.82] P_Holm=1.000 D*=1.01 not resolved
+== ING protocol steady: n=10  resolved/equiv/not = 0/8/47; CI excl 0: 19; min P_Holm 0.215
+   ranking: RF 3.84, XGB 3.90, TCN 3.99, GRU 4.06, TFT 4.09, LSTM 4.10, PATCHTST 4.25, RIDGE 4.47, ELASTICNET 4.48, LASSO 4.48, OLS 4.50
+   top RF vs 10: {'not resolved': 9, 'equivalent': 1}
+   RF-TCN: -0.157 [-0.53,0.21] P_Holm=1.000 D*=0.46 not resolved
+== ING protocol transition: n=10  resolved/equiv/not = 0/8/47; CI excl 0: 25; min P_Holm 0.107
+   ranking: TCN 4.35, GRU 4.44, XGB 4.47, RF 4.49, TFT 4.56, LSTM 4.57, PATCHTST 4.70, LASSO 5.02, RIDGE 5.03, ELASTICNET 5.03, OLS 5.04
+   top TCN vs 10: {'not resolved': 9, 'equivalent': 1}
+   RF-TCN: +0.149 [-0.24,0.54] P_Holm=1.000 D*=0.46 not resolved
+== ING protocol gap: n=10  resolved/equiv/not = 0/29/26; CI excl 0: 11; min P_Holm 0.215
+   ranking: TCN 0.35, GRU 0.38, PATCHTST 0.45, LSTM 0.47, TFT 0.47, LASSO 0.54, OLS 0.55, ELASTICNET 0.55, RIDGE 0.56, XGB 0.57, RF 0.66
+   top TCN vs 10: {'equivalent': 6, 'not resolved': 4}
+   RF-TCN: +0.305 [0.13,0.48] P_Holm=0.316 D*=0.44 not resolved

@@ -73,7 +73,7 @@ def apply():
 
 
 def panel(ax, letter, x=-0.12, y=1.04):
-    ax.text(x, y, letter, transform=ax.transAxes, fontsize=10, fontweight="bold", va="bottom", ha="left", color=INK)
+    ax.text(x, y, letter.lower(), transform=ax.transAxes, fontsize=10, fontweight="bold", va="bottom", ha="left", color=INK)
 
 
 def save(fig, out_dir, name):

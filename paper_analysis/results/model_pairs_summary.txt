@@ -1,0 +1,133 @@
+== BEL: n=16, SD=5.31, margin=0.266; min attainable P_Holm=0.002; min raw P=3.1e-05
+   ranking: TCN 2.37, GRU 2.42, RF 2.57, TFT 2.58, PATCHTST 2.65, XGB 2.66, LSTM 2.66, LASSO 2.83, RIDGE 2.84, OLS 2.85, ELASTICNET 2.85
+   classes (resolved/equivalent/not resolved): 10/7/38; 95% CI excludes 0 but not resolved: 19; Delta* < margin but not equivalent: 7
+   top model TCN vs other 10: {'resolved': 5, 'not resolved': 5}
+   resolved OLS-GRU: +0.431 [0.288, 0.575] P_Holm=0.002 r_rb=1.00 D*=0.549
+   resolved OLS-TCN: +0.480 [0.268, 0.692] P_Holm=0.005 r_rb=0.97 D*=0.655
+   resolved RIDGE-GRU: +0.421 [0.254, 0.587] P_Holm=0.015 r_rb=0.93 D*=0.557
+   resolved RIDGE-TCN: +0.469 [0.243, 0.695] P_Holm=0.015 r_rb=0.93 D*=0.655
+   resolved LASSO-GRU: +0.412 [0.260, 0.564] P_Holm=0.008 r_rb=0.96 D*=0.537
+   resolved LASSO-TCN: +0.460 [0.255, 0.666] P_Holm=0.011 r_rb=0.94 D*=0.629
+   resolved ELASTICNET-GRU: +0.433 [0.274, 0.591] P_Holm=0.015 r_rb=0.93 D*=0.563
+   resolved ELASTICNET-TCN: +0.481 [0.275, 0.688] P_Holm=0.008 r_rb=0.96 D*=0.651
+   resolved XGB-TCN: +0.286 [0.128, 0.443] P_Holm=0.008 r_rb=0.96 D*=0.415
+   resolved LSTM-GRU: +0.242 [0.111, 0.374] P_Holm=0.015 r_rb=0.93 D*=0.350
+   equivalent OLS-RIDGE: +0.011 D*=0.070 TOST P_Holm=4.29e-05
+   equivalent OLS-LASSO: +0.020 D*=0.070 TOST P_Holm=9.94e-06
+   equivalent OLS-ELASTICNET: -0.001 D*=0.056 TOST P_Holm=1.14e-05
+   equivalent RIDGE-LASSO: +0.009 D*=0.060 TOST P_Holm=6.3e-06
+   equivalent RIDGE-ELASTICNET: -0.012 D*=0.049 TOST P_Holm=1.03e-07
+   equivalent LASSO-ELASTICNET: -0.021 D*=0.058 TOST P_Holm=1.66e-07
+   equivalent RF-XGB: -0.090 D*=0.162 TOST P_Holm=0.0162
+   OLS - RF: +0.285 [0.034, 0.535] D*=0.491 (0.092 SD) P_Holm=0.639 TOST P_Holm=1.000 not resolved
+   RIDGE - RF: +0.274 [0.044, 0.504] D*=0.463 (0.087 SD) P_Holm=0.524 TOST P_Holm=1.000 not resolved
+   LASSO - RF: +0.265 [0.030, 0.500] D*=0.458 (0.086 SD) P_Holm=0.799 TOST P_Holm=1.000 not resolved
+   ELASTICNET - RF: +0.286 [0.064, 0.508] D*=0.469 (0.088 SD) P_Holm=0.639 TOST P_Holm=1.000 not resolved
+   XGB - RF: +0.090 [0.003, 0.178] D*=0.162 (0.031 SD) P_Holm=1.000 TOST P_Holm=0.016 equivalent
+   LSTM - RF: +0.096 [-0.126, 0.317] D*=0.278 (0.052 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   GRU - RF: -0.147 [-0.353, 0.059] D*=0.316 (0.059 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   TCN - RF: -0.195 [-0.363, -0.027] D*=0.334 (0.063 SD) P_Holm=0.524 TOST P_Holm=1.000 not resolved
+   TFT - RF: +0.017 [-0.165, 0.200] D*=0.167 (0.031 SD) P_Holm=1.000 TOST P_Holm=0.250 not resolved
+   PATCHTST - RF: +0.085 [-0.228, 0.399] D*=0.343 (0.065 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   TOST at +-0.25 (Holm over 55): 7 equivalent: OLS-RIDGE, OLS-LASSO, OLS-ELASTICNET, RIDGE-LASSO, RIDGE-ELASTICNET, LASSO-ELASTICNET, RF-XGB
+   variance shares: participants 75.0%, models 7.1%, residual 17.9%
+   best per participant: {'TCN': 4, 'RF': 3, 'GRU': 3, 'PATCHTST': 3, 'LASSO': 1, 'RIDGE': 1, 'TFT': 1} (7 different models; top model TCN best for 4 of 16)
+   between-participant SD per model 0.37-0.69; range of model means 0.48
+== WEEE: n=15, SD=7.81, margin=0.390; min attainable P_Holm=0.003; min raw P=0.03
+   ranking: RF 4.74, XGB 4.75, RIDGE 4.79, ELASTICNET 4.86, LASSO 4.88, OLS 4.96, PATCHTST 5.04, GRU 5.09, TFT 5.14, LSTM 5.16, TCN 5.20
+   classes (resolved/equivalent/not resolved): 0/2/53; 95% CI excludes 0 but not resolved: 2; Delta* < margin but not equivalent: 5
+   top model RF vs other 10: {'not resolved': 10}
+   equivalent RIDGE-ELASTICNET: -0.072 D*=0.204 TOST P_Holm=0.0227
+   equivalent LASSO-ELASTICNET: +0.019 D*=0.132 TOST P_Holm=0.00127
+   OLS - RF: +0.219 [-0.626, 1.065] D*=0.914 (0.117 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   RIDGE - RF: +0.052 [-0.545, 0.649] D*=0.543 (0.070 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   LASSO - RF: +0.143 [-0.557, 0.844] D*=0.719 (0.092 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   ELASTICNET - RF: +0.124 [-0.567, 0.815] D*=0.691 (0.089 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   XGB - RF: +0.006 [-0.456, 0.467] D*=0.385 (0.049 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   LSTM - RF: +0.416 [-0.152, 0.983] D*=0.881 (0.113 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   GRU - RF: +0.351 [-0.124, 0.826] D*=0.741 (0.095 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   TCN - RF: +0.464 [-0.223, 1.150] D*=1.028 (0.132 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   TFT - RF: +0.400 [-0.053, 0.852] D*=0.771 (0.099 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   PATCHTST - RF: +0.302 [-0.127, 0.731] D*=0.654 (0.084 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   variance shares: participants 77.9%, models 0.0%, residual 22.1%
+   best per participant: {'LASSO': 3, 'XGB': 3, 'RF': 2, 'OLS': 2, 'GRU': 2, 'TCN': 1, 'PATCHTST': 1, 'RIDGE': 1} (8 different models; top model RF best for 2 of 15)
+   between-participant SD per model 1.45-1.98; range of model means 0.46
+== ING: n=10, SD=8.82, margin=0.441; min attainable P_Holm=0.107; min raw P=0.0039
+   ranking: RF 4.10, XGB 4.13, TCN 4.16, GRU 4.23, TFT 4.28, LSTM 4.29, PATCHTST 4.47, RIDGE 4.62, LASSO 4.63, ELASTICNET 4.64, OLS 4.66
+   classes (resolved/equivalent/not resolved): 0/9/46; 95% CI excludes 0 but not resolved: 19; Delta* < margin but not equivalent: 9
+   top model RF vs other 10: {'not resolved': 9, 'equivalent': 1}
+   equivalent OLS-RIDGE: +0.033 D*=0.118 TOST P_Holm=0.00025
+   equivalent OLS-LASSO: +0.026 D*=0.102 TOST P_Holm=8.74e-05
+   equivalent OLS-ELASTICNET: +0.022 D*=0.090 TOST P_Holm=3.31e-05
+   equivalent RIDGE-LASSO: -0.007 D*=0.041 TOST P_Holm=5.76e-08
+   equivalent RIDGE-ELASTICNET: -0.012 D*=0.040 TOST P_Holm=1.11e-08
+   equivalent LASSO-ELASTICNET: -0.005 D*=0.020 TOST P_Holm=5.12e-11
+   equivalent RF-XGB: -0.033 D*=0.122 TOST P_Holm=0.000373
+   equivalent LSTM-GRU: +0.065 D*=0.196 TOST P_Holm=0.012
+   equivalent GRU-TCN: +0.067 D*=0.214 TOST P_Holm=0.0269
+   OLS - RF: +0.559 [0.282, 0.837] D*=0.784 (0.089 SD) P_Holm=0.299 TOST P_Holm=1.000 not resolved
+   RIDGE - RF: +0.526 [0.253, 0.799] D*=0.747 (0.085 SD) P_Holm=0.459 TOST P_Holm=1.000 not resolved
+   LASSO - RF: +0.533 [0.267, 0.799] D*=0.749 (0.085 SD) P_Holm=0.299 TOST P_Holm=1.000 not resolved
+   ELASTICNET - RF: +0.538 [0.269, 0.807] D*=0.756 (0.086 SD) P_Holm=0.299 TOST P_Holm=1.000 not resolved
+   XGB - RF: +0.033 [-0.077, 0.143] D*=0.122 (0.014 SD) P_Holm=1.000 TOST P_Holm=0.000 equivalent
+   LSTM - RF: +0.192 [-0.177, 0.562] D*=0.492 (0.056 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   GRU - RF: +0.127 [-0.202, 0.456] D*=0.394 (0.045 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   TCN - RF: +0.060 [-0.325, 0.445] D*=0.372 (0.042 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   TFT - RF: +0.183 [-0.157, 0.523] D*=0.458 (0.052 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   PATCHTST - RF: +0.369 [-0.096, 0.833] D*=0.745 (0.084 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   variance shares: participants 91.7%, models 2.4%, residual 5.9%
+   best per participant: {'RF': 3, 'TCN': 2, 'GRU': 1, 'TFT': 1, 'XGB': 1, 'PATCHTST': 1, 'LSTM': 1} (7 different models; top model RF best for 3 of 10)
+   between-participant SD per model 1.16-1.67; range of model means 0.56
+== BEL_CORE: n=16, SD=5.31, margin=0.266; min attainable P_Holm=0.002; min raw P=0.00031
+   ranking: TCN 2.33, GRU 2.37, PATCHTST 2.39, TFT 2.46, LSTM 2.48, XGB 2.60, RF 2.61, OLS 2.78, LASSO 2.78, RIDGE 2.78, ELASTICNET 2.78
+   classes (resolved/equivalent/not resolved): 1/10/44; 95% CI excludes 0 but not resolved: 31; Delta* < margin but not equivalent: 8
+   top model TCN vs other 10: {'not resolved': 9, 'equivalent': 1}
+   resolved RF-GRU: +0.241 [0.082, 0.400] P_Holm=0.017 r_rb=0.93 D*=0.371
+   equivalent OLS-RIDGE: -0.003 D*=0.008 TOST P_Holm=1.79e-21
+   equivalent OLS-LASSO: -0.000 D*=0.000 TOST P_Holm=2e-41
+   equivalent OLS-ELASTICNET: -0.005 D*=0.009 TOST P_Holm=2.88e-21
+   equivalent RIDGE-LASSO: +0.003 D*=0.008 TOST P_Holm=1.31e-21
+   equivalent RIDGE-ELASTICNET: -0.001 D*=0.002 TOST P_Holm=2.67e-32
+   equivalent LASSO-ELASTICNET: -0.004 D*=0.009 TOST P_Holm=2.02e-21
+   equivalent RF-XGB: +0.004 D*=0.051 TOST P_Holm=1.69e-06
+   equivalent LSTM-GRU: +0.111 D*=0.170 TOST P_Holm=0.00753
+   equivalent GRU-PATCHTST: -0.027 D*=0.136 TOST P_Holm=0.0372
+   equivalent TCN-PATCHTST: -0.059 D*=0.145 TOST P_Holm=0.0175
+   OLS - RF: +0.172 [-0.031, 0.375] D*=0.339 (0.064 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   RIDGE - RF: +0.175 [-0.024, 0.375] D*=0.340 (0.064 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   LASSO - RF: +0.172 [-0.031, 0.375] D*=0.339 (0.064 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   ELASTICNET - RF: +0.177 [-0.023, 0.377] D*=0.341 (0.064 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   XGB - RF: -0.004 [-0.061, 0.053] D*=0.051 (0.010 SD) P_Holm=1.000 TOST P_Holm=0.000 equivalent
+   LSTM - RF: -0.129 [-0.243, -0.016] D*=0.223 (0.042 SD) P_Holm=1.000 TOST P_Holm=0.451 not resolved
+   GRU - RF: -0.241 [-0.400, -0.082] D*=0.371 (0.070 SD) P_Holm=0.017 TOST P_Holm=1.000 resolved
+   TCN - RF: -0.273 [-0.432, -0.114] D*=0.404 (0.076 SD) P_Holm=0.100 TOST P_Holm=1.000 not resolved
+   TFT - RF: -0.145 [-0.360, 0.071] D*=0.322 (0.061 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   PATCHTST - RF: -0.214 [-0.428, 0.000] D*=0.390 (0.073 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+== WEEE_HRQ: n=11, SD=8.49, margin=0.424; min attainable P_Holm=0.054; min raw P=0.00098
+   ranking: XGB 4.30, LASSO 4.38, OLS 4.38, ELASTICNET 4.52, RF 4.59, RIDGE 4.61, TFT 4.80, GRU 4.87, LSTM 4.95, TCN 4.98, PATCHTST 5.38
+   classes (resolved/equivalent/not resolved): 0/1/54; 95% CI excludes 0 but not resolved: 7; Delta* < margin but not equivalent: 2
+   top model XGB vs other 10: {'not resolved': 10}
+   equivalent OLS-LASSO: +0.004 D*=0.124 TOST P_Holm=0.00232
+   OLS - RF: -0.206 [-0.834, 0.422] D*=0.717 (0.084 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   RIDGE - RF: +0.022 [-0.611, 0.655] D*=0.537 (0.063 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   LASSO - RF: -0.210 [-0.738, 0.319] D*=0.640 (0.075 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   ELASTICNET - RF: -0.070 [-0.666, 0.526] D*=0.555 (0.065 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   XGB - RF: -0.282 [-0.682, 0.117] D*=0.607 (0.072 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   LSTM - RF: +0.368 [-0.488, 1.224] D*=1.064 (0.125 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   GRU - RF: +0.284 [-0.486, 1.053] D*=0.909 (0.107 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   TCN - RF: +0.392 [-0.380, 1.163] D*=1.019 (0.120 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   TFT - RF: +0.210 [-0.457, 0.878] D*=0.753 (0.089 SD) P_Holm=1.000 TOST P_Holm=1.000 not resolved
+   PATCHTST - RF: +0.791 [0.277, 1.305] D*=1.209 (0.142 SD) P_Holm=0.684 TOST P_Holm=1.000 not resolved
+== Cross-dataset (BEL, WEEE, ING)
+   equivalent on all three: 2: LASSO-ELASTICNET, RIDGE-ELASTICNET
+   BEL-resolved ELASTICNET-GRU: BEL +0.43; WEEE -0.23 (not resolved); ING +0.41 (not resolved)
+   BEL-resolved ELASTICNET-TCN: BEL +0.48; WEEE -0.34 (not resolved); ING +0.48 (not resolved)
+   BEL-resolved LASSO-GRU: BEL +0.41; WEEE -0.21 (not resolved); ING +0.41 (not resolved)
+   BEL-resolved LASSO-TCN: BEL +0.46; WEEE -0.32 (not resolved); ING +0.47 (not resolved)
+   BEL-resolved LSTM-GRU: BEL +0.24; WEEE +0.06 (not resolved); ING +0.07 (equivalent)
+   BEL-resolved OLS-GRU: BEL +0.43; WEEE -0.13 (not resolved); ING +0.43 (not resolved)
+   BEL-resolved OLS-TCN: BEL +0.48; WEEE -0.24 (not resolved); ING +0.50 (not resolved)
+   BEL-resolved RIDGE-GRU: BEL +0.42; WEEE -0.30 (not resolved); ING +0.40 (not resolved)
+   BEL-resolved RIDGE-TCN: BEL +0.47; WEEE -0.41 (not resolved); ING +0.47 (not resolved)
+   BEL-resolved XGB-TCN: BEL +0.29; WEEE -0.46 (not resolved); ING -0.03 (not resolved)
+   pairs with the same direction on all three: 19 of 55

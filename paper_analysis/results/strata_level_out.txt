@@ -1,0 +1,12 @@
+== BEL detector: mean VO2 by stratum (mL/kg/min) {'middle': 15.48, 'steady': 11.0, 'transition': 13.3}
+   penalty as reported: {'RF': 1.51, 'RIDGE': 1.52, 'TCN': 1.48}
+   penalty within VO2 quintiles: {'RF': 1.39, 'RIDGE': 1.42, 'TCN': 1.32}
+== BEL oracle: mean VO2 by stratum (mL/kg/min) {'middle': 13.71, 'steady': 10.33, 'transition': 15.75}
+   penalty as reported: {'RF': 1.61, 'RIDGE': 1.59, 'TCN': 1.6}
+   penalty within VO2 quintiles: {'RF': 1.38, 'RIDGE': 1.31, 'TCN': 1.39}
+== WEEE protocol: mean VO2 by stratum (mL/kg/min) {'middle': 11.96, 'steady': 11.19, 'transition': 11.28}
+   penalty as reported: {'RF': 1.2, 'RIDGE': 1.1, 'TCN': 1.17}
+   penalty within VO2 quintiles: {'RF': 1.02, 'RIDGE': 1.08, 'TCN': 1.02}
+== ING protocol: mean VO2 by stratum (mL/kg/min) {'middle': 15.26, 'steady': 13.86, 'transition': 15.7}
+   penalty as reported: {'RF': 1.18, 'RIDGE': 1.13, 'TCN': 1.08}
+   penalty within VO2 quintiles: {'RF': 1.26, 'RIDGE': 1.22, 'TCN': 1.14}

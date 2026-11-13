@@ -1,0 +1,52 @@
+== BEL detector: pooled shares steady 34%, middle 34%, transition 33%
+   transition share of squared error (all models pooled): 40%; per-model range: 38%-43%
+   penalty: LSTM 1.43, OLS 1.44, TFT 1.45, GRU 1.48, TCN 1.48, XGB 1.49, LASSO 1.51, RF 1.51, ELASTICNET 1.52, RIDGE 1.52, PATCHTST 1.61
+   penalty pairs Holm<0.05: 0; CI excludes 0: 1; min P_Holm 1.000
+   TCN vs RF: lower RMSE by 2.4% steady, 3.3% transition; penalty ratio 0.977 [0.892, 1.071]
+   TCN vs linear mean: lower RMSE by 12.0% steady, 11.9% transition; penalty ratio 0.985 [0.873, 1.112]
+   TCN vs XGB: lower RMSE by 8.2% steady, 7.5% transition; penalty ratio 0.990 [0.906, 1.082]
+   GRU vs RF: lower RMSE by 2.0% steady, 3.6% transition; penalty ratio 0.977 [0.866, 1.101]
+   GRU vs linear mean: lower RMSE by 11.7% steady, 12.2% transition; penalty ratio 0.985 [0.866, 1.120]
+   GRU vs XGB: lower RMSE by 7.8% steady, 7.8% transition; penalty ratio 0.989 [0.878, 1.115]
+   RMSE at evaluated mix 2.37-2.85; transitions 50%: change +3.1% to +5.8%; transitions 10%: -6.0% to -2.9%
+   ranks act/steady/trans/w50/w10: TCN 1/1/2/1/1; GRU 2/2/1/2/2; RF 3/3/3/3/4; TFT 4/6/4/4/3; PATCHTST 5/4/8/7/5; XGB 6/5/6/6/6; LSTM 7/8/5/5/7; LASSO 8/7/7/8/9; RIDGE 9/9/10/9/8; OLS 10/11/9/10/11; ELASTICNET 11/10/11/11/10
+   range of model means: steady 0.33, transition 0.40; transition-steady gap per model 0.88-1.13
+== BEL oracle: pooled shares steady 33%, middle 33%, transition 33%
+   transition share of squared error (all models pooled): 52%; per-model range: 51%-54%
+   penalty: LSTM 1.52, OLS 1.57, XGB 1.59, RIDGE 1.59, TCN 1.60, RF 1.61, ELASTICNET 1.62, LASSO 1.64, GRU 1.68, TFT 1.72, PATCHTST 1.73
+   penalty pairs Holm<0.05: 0; CI excludes 0: 4; min P_Holm 0.420
+   TCN vs RF: lower RMSE by 7.0% steady, 8.8% transition; penalty ratio 0.993 [0.897, 1.099]
+   TCN vs linear mean: lower RMSE by 17.0% steady, 17.5% transition; penalty ratio 0.996 [0.878, 1.131]
+   TCN vs XGB: lower RMSE by 11.6% steady, 10.8% transition; penalty ratio 1.005 [0.901, 1.122]
+   GRU vs RF: lower RMSE by 7.7% steady, 4.6% transition; penalty ratio 1.044 [0.959, 1.136]
+   GRU vs linear mean: lower RMSE by 17.7% steady, 13.7% transition; penalty ratio 1.047 [0.915, 1.198]
+   GRU vs XGB: lower RMSE by 12.3% steady, 6.8% transition; penalty ratio 1.057 [0.972, 1.148]
+   RMSE at evaluated mix 2.37-2.85; transitions 50%: change +6.0% to +9.7%; transitions 10%: -10.2% to -8.8%
+   ranks act/steady/trans/w50/w10: TCN 1/2/1/1/1; GRU 2/1/2/2/2; RF 3/5/3/3/3; TFT 4/3/5/4/4; PATCHTST 5/4/7/7/5; XGB 6/6/6/6/6; LSTM 7/7/4/5/7; LASSO 8/8/10/9/8; RIDGE 9/10/9/10/9; OLS 10/11/8/8/11; ELASTICNET 11/9/11/11/10
+   range of model means: steady 0.44, transition 0.65; transition-steady gap per model 1.08-1.42
+== WEEE protocol: pooled shares steady 42%, middle 30%, transition 28%
+   transition share of squared error (all models pooled): 29%; per-model range: 27%-30%
+   penalty: OLS 1.02, LASSO 1.02, PATCHTST 1.03, ELASTICNET 1.05, RIDGE 1.10, LSTM 1.13, TCN 1.17, TFT 1.19, GRU 1.20, RF 1.20, XGB 1.25
+   penalty pairs Holm<0.05: 0; CI excludes 0: 3; min P_Holm 1.000
+   TCN vs RF: lower RMSE by -12.5% steady, -15.7% transition; penalty ratio 0.979 [0.706, 1.356]
+   TCN vs linear mean: lower RMSE by 0.8% steady, -7.7% transition; penalty ratio 1.120 [0.991, 1.266]
+   TCN vs XGB: lower RMSE by -15.8% steady, -11.4% transition; penalty ratio 0.937 [0.732, 1.199]
+   GRU vs RF: lower RMSE by -7.3% steady, -12.1% transition; penalty ratio 0.999 [0.846, 1.181]
+   GRU vs linear mean: lower RMSE by 5.4% steady, -4.3% transition; penalty ratio 1.144 [0.880, 1.488]
+   GRU vs XGB: lower RMSE by -10.5% steady, -7.9% transition; penalty ratio 0.957 [0.849, 1.079]
+   RMSE at evaluated mix 4.74-5.23; transitions 50%: change -2.4% to +1.0%; transitions 10%: -5.1% to -1.4%
+   ranks act/steady/trans/w50/w10: RF 1/2/1/1/1; XGB 2/1/2/2/2; RIDGE 3/4/6/3/3; ELASTICNET 4/7/5/5/4; LASSO 5/9/3/4/5; OLS 6/10/4/6/8; PATCHTST 7/11/8/7/6; GRU 8/3/9/8/7; LSTM 9/8/7/9/11; TFT 10/5/10/10/9; TCN 11/6/11/11/10
+   range of model means: steady 0.91, transition 0.72; transition-steady gap per model -0.13-0.58
+== ING protocol: pooled shares steady 54%, middle 23%, transition 23%
+   transition share of squared error (all models pooled): 26%; per-model range: 25%-27%
+   penalty: TCN 1.08, GRU 1.09, PATCHTST 1.11, LSTM 1.11, TFT 1.12, OLS 1.12, LASSO 1.12, ELASTICNET 1.12, RIDGE 1.13, XGB 1.16, RF 1.18
+   penalty pairs Holm<0.05: 0; CI excludes 0: 9; min P_Holm 0.215
+   TCN vs RF: lower RMSE by -4.1% steady, 3.3% transition; penalty ratio 0.915 [0.868, 0.965]
+   TCN vs linear mean: lower RMSE by 10.9% steady, 13.7% transition; penalty ratio 0.964 [0.926, 1.004]
+   TCN vs XGB: lower RMSE by -2.5% steady, 2.7% transition; penalty ratio 0.936 [0.895, 0.980]
+   GRU vs RF: lower RMSE by -5.8% steady, 1.1% transition; penalty ratio 0.923 [0.866, 0.984]
+   GRU vs linear mean: lower RMSE by 9.4% steady, 11.7% transition; penalty ratio 0.973 [0.915, 1.034]
+   GRU vs XGB: lower RMSE by -4.2% steady, 0.5% transition; penalty ratio 0.945 [0.889, 1.004]
+   RMSE at evaluated mix 4.10-4.66; transitions 50%: change +2.4% to +4.5%; transitions 10%: -1.4% to +0.8%
+   ranks act/steady/trans/w50/w10: RF 1/1/4/2/1; XGB 2/2/3/3/2; TCN 3/3/1/1/3; GRU 4/4/2/4/4; TFT 5/5/5/5/5; LSTM 6/6/6/6/6; PATCHTST 7/7/7/7/7; RIDGE 8/8/9/8/8; LASSO 9/10/8/9/9; ELASTICNET 10/9/10/10/10; OLS 11/11/11/11/11
+   range of model means: steady 0.66, transition 0.70; transition-steady gap per model 0.35-0.66
